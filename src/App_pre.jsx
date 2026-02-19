@@ -49,7 +49,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 
-// --- Firebase Configuration ---
+// --- Firebase Configuration
 const firebaseConfig =
   typeof __firebase_config !== "undefined"
     ? JSON.parse(__firebase_config)
