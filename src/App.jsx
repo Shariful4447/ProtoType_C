@@ -222,7 +222,7 @@ async function mockNlpApi(query, scenarioId) {
 
   if (text.match(/\b(hi|hello|hey|greetings)\b/)) {
     return {
-      text: "Welcome to LocalSphere. Welcome to PublicSphere. How can I assist you with city services today?",
+      text: "Welcome to LocalSphere.How can I assist you with city services today?",
     };
   }
 
@@ -369,7 +369,7 @@ export default function App() {
         const welcome = {
           text:
             activeScenario === "home"
-              ? "Welcome to LocalSphere. Welcome to PublicSphere. How can I assist you with city services today?"
+              ? "Welcome to LocalSphere.How can I assist you with city services today?"
               : `Welcome to the ${SCENARIOS[activeScenario].name} assistant.`,
         };
         addDoc(messagesRef, {
