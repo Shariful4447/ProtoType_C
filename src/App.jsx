@@ -564,7 +564,7 @@ export default function App() {
                   <Bot size={24} className="text-white" />
                 </div>
                 <div className="flex flex-col">
-                  <h3 className="font-bold text-lg leading-none mb-1 text-white tracking-tighter uppercase">
+                  <h3 className="font-bold text-lg leading-none mb-1 text-white tracking-tighter">
                     askMe
                   </h3>
                   <div className="flex items-center gap-1.5 text-[9px] font-black uppercase tracking-widest text-blue-100 opacity-80">
