@@ -586,17 +586,14 @@ export default function App() {
                 <MessageBubble key={i} message={m} />
               ))}
               {isTyping && (
-                <div className="flex justify-start mb-4">
-                  <div className="bg-white border border-gray-100 px-4 py-3 rounded-2xl rounded-tl-none shadow-sm">
-                    <span className="animate-pulse text-slate-400 font-bold italic text-xs">
-                      THINKING...
-                    </span>
+                <div className="flex justify-start mb-6">
+                  <div className="bg-white border border-gray-100 px-4 py-2 rounded-2xl rounded-tl-none shadow-sm text-blue-700 text-[10px] font-black uppercase tracking-widest animate-pulse italic">
+                    Thinking...
                   </div>
                 </div>
               )}
               <div ref={chatEndRef} />
             </div>
-
             <form
               onSubmit={handleSend}
               className="p-5 bg-white border-t border-slate-100"
